@@ -1,3 +1,4 @@
+# cleaning up a review
 def review2words(raw_review):
 	import re;
 	from bs4 import BeautifulSoup as bs;
@@ -11,7 +12,7 @@ def review2words(raw_review):
 	words=rev.lower().split(); # convert to lowercase, split into individual words
 	meaningful=[w for w in words if not w in stops]; # meaningful is a list of meaningful words i.e. list of review words excluding stopwords
 	# creating final review paragraph, meaningful words sep by space
-	rev=" ".join(meaningful);
-	return rev;
+	rev=" ".join(meaningful); # concatenate revised word list into single review paragraph
+	return rev; # return cleaned reviews
 
 
