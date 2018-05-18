@@ -1,9 +1,9 @@
 # cleaning up a review
-def review2words(raw_review):
-	import re;
-	from bs4 import BeautifulSoup as bs;
-	from nltk.corpus import stopwords;
+import re;
+from bs4 import BeautifulSoup as bs;
+from nltk.corpus import stopwords;
 
+def review2words(raw_review):
 	#call this function for all reviews
 	
 	stops = stopwords.words("english"); #view list of English stop words
